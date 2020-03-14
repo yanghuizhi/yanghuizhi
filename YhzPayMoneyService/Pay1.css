@@ -1,0 +1,35 @@
+.h1 {
+    text-align: left;
+    width: 500px;
+    height: 1px;
+    text-indent:1em;
+}
+
+.box {
+    width:600px;
+    display: inline-flex;
+
+}
+
+.box-1{
+    padding: 20px;
+}
+
+.fonx{
+    text-align: center;
+    padding: 5px;
+    color: blue;
+}
+
+
+.Alipay{
+    width: 240px;
+    height: 360px;
+    border-style: inset;
+}
+
+.Wechat {
+    width: 240px;
+    height: 360px;
+    border-style: inset;
+}
