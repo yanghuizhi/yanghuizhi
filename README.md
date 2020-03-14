@@ -1,8 +1,8 @@
 ## Welcome to GitHub Pages
 
-<html>
-<img width=50% height=50% src="https://www.helloglobal.com/online-public/index/index__earth.gif">
-</htmnl>
+<html lang="zh">
+<img width=50% height=50% src="https://www.helloglobal.com/online-public/index/index__earth.gif" alt="地球仪">
+</html>
 
 ## 一、简介
 
