@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7aa9c42-f008-407f-af60-d06c5051694c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,138 +94,10 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yanghuizhi/YhzPersonalMottoService/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yanghuizhi/YhzPayMoneyService/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <module name="yanghuizhi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -248,7 +120,8 @@
       <workItem from="1584154563179" duration="1222000" />
       <workItem from="1584156558380" duration="286000" />
       <workItem from="1584166008807" duration="1275000" />
-      <workItem from="1584170751789" duration="244000" />
+      <workItem from="1584170751789" duration="364000" />
+      <workItem from="1584340244312" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1566451356541</created>
@@ -325,6 +198,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="update 0120" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1346" height="294" key="GridCell.Tab.0.bottom" timestamp="1584171117167">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.0.bottom/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117167" />
+    <state width="1346" height="294" key="GridCell.Tab.0.center" timestamp="1584171117166">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.0.center/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117166" />
+    <state width="1346" height="294" key="GridCell.Tab.0.left" timestamp="1584171117166">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.0.left/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117166" />
+    <state width="1346" height="294" key="GridCell.Tab.0.right" timestamp="1584171117167">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.0.right/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117167" />
+    <state width="1346" height="294" key="GridCell.Tab.1.bottom" timestamp="1584171117169">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.1.bottom/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117169" />
+    <state width="1346" height="294" key="GridCell.Tab.1.center" timestamp="1584171117168">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.1.center/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117168" />
+    <state width="1346" height="294" key="GridCell.Tab.1.left" timestamp="1584171117168">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.1.left/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117168" />
+    <state width="1346" height="294" key="GridCell.Tab.1.right" timestamp="1584171117169">
+      <screen x="-303" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1346" height="294" key="GridCell.Tab.1.right/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117169" />
     <state x="384" y="-998" width="1188" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584166596177">
       <screen x="-303" y="-1057" width="1920" height="1057" />
     </state>
