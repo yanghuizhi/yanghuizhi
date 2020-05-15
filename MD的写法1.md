@@ -67,3 +67,15 @@
     注意
     非英文的锚点字符，在单击跳转时，在浏览器的 url 中会按照规则进行 encode 和 decode
 ```
+
+<details>
+<summary>点击查看运行日志</summary>
+<!--注释：收缩写法-->
+
+```
+INFO     Loading environment variables from /Users/debugtalk/mubu-demo/.env
+INFO     Start to run testcase: /api/login/submit
+/api/login/submit
+INFO     POST https://mubu.com/api/login/submit
+INFO     status_code: 200, response_time(ms): 206.3 ms, response_length: 45 bytes
+```
