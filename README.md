@@ -2,7 +2,7 @@
 
 <html lang="zh">
 <img width=50% height=50% src="https://www.helloglobal.com/online-public/index/index__earth.gif" alt="地球仪">
-<img width=50% height=50% src="Resume/images/index__earth.gif" alt="地球仪">
+<img width=50% height=50% src="Resume/images/index  __earth.gif" alt="地球仪">
 </html>
 
 ## 一、简介

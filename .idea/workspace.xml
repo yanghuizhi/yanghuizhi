@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7aa9c42-f008-407f-af60-d06c5051694c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MD的写法2.md" beforeDir="false" afterPath="$PROJECT_DIR$/MD的写法2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +117,10 @@
       <workItem from="1584166008807" duration="1275000" />
       <workItem from="1584170751789" duration="364000" />
       <workItem from="1584340244312" duration="40000" />
-      <workItem from="1589505108254" duration="669000" />
+      <workItem from="1589505108254" duration="1282000" />
+      <workItem from="1592225430987" duration="727000" />
+      <workItem from="1592228521393" duration="7000" />
+      <workItem from="1592274816286" duration="880000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1566451356541</created>
@@ -193,6 +197,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update 0120" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2916" y="351" key="FileChooserDialogImpl" timestamp="1592228527206">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2916" y="351" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592228527206" />
     <state width="1346" height="294" key="GridCell.Tab.0.bottom" timestamp="1584171117167">
       <screen x="-303" y="-1057" width="1920" height="1057" />
     </state>
