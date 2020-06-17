@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7aa9c42-f008-407f-af60-d06c5051694c" name="Default" comment="update 20200616">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD的写法1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MD的写法2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="d7aa9c42-f008-407f-af60-d06c5051694c" name="Default" comment="update 20200617" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,16 +71,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/AppPayMoneyService" />
-      <recent name="$PROJECT_DIR$/loveyou/NO1" />
-      <recent name="$PROJECT_DIR$/loveyou/第一个/1/Love_files" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/YhzPersonalMottoService" />
       <recent name="$PROJECT_DIR$/YhzPayMoneyService" />
       <recent name="$PROJECT_DIR$/AppPayMoneyService" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\pypy\yanghuizhi" />
+      <recent name="$PROJECT_DIR$/AppPayMoneyService" />
+      <recent name="$PROJECT_DIR$/loveyou/NO1" />
+      <recent name="$PROJECT_DIR$/loveyou/第一个/1/Love_files" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -121,7 +117,7 @@
       <workItem from="1589505108254" duration="1282000" />
       <workItem from="1592225430987" duration="727000" />
       <workItem from="1592228521393" duration="7000" />
-      <workItem from="1592274816286" duration="6766000" />
+      <workItem from="1592274816286" duration="6943000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1566451356541</created>
@@ -193,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592277867400</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update 20200617">
+      <created>1592399934647</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592399934647</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,13 +206,14 @@
     <MESSAGE value="1" />
     <MESSAGE value="update 0120" />
     <MESSAGE value="update 20200616" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 20200616" />
+    <MESSAGE value="update 20200617" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 20200617" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1920" y="209" key="CommitChangelistDialog2" timestamp="1592277865900">
+    <state x="1920" y="209" key="CommitChangelistDialog2" timestamp="1592399933198">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1920" y="209" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592277865900" />
+    <state x="1920" y="209" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592399933198" />
     <state x="2916" y="351" key="FileChooserDialogImpl" timestamp="1592228527206">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -246,10 +250,10 @@
       <screen x="-303" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1346" height="294" key="GridCell.Tab.1.right/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117169" />
-    <state x="2909" y="381" key="Vcs.Push.Dialog.v2" timestamp="1592277869749">
+    <state x="2909" y="381" key="Vcs.Push.Dialog.v2" timestamp="1592399938510">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2909" y="381" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592277869749" />
+    <state x="2909" y="381" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592399938510" />
     <state x="384" y="-998" width="1188" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584166596177">
       <screen x="-303" y="-1057" width="1920" height="1057" />
     </state>
