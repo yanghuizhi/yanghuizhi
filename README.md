@@ -15,7 +15,7 @@
 - 📝 [二维码支付](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/index.html)
 - 📝 [协助协议](https://yanghuizhi.github.io/yanghuizhi/YhzPersonalMottoService/index.html)
 
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark" width="430" height="80%" />
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark" width="430" height="50%" />
 
 <!--
 **技术栈 与 开发工具:**
