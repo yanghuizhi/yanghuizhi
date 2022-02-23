@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7aa9c42-f008-407f-af60-d06c5051694c" name="Default" comment="update 20200617">
+    <list default="true" id="d7aa9c42-f008-407f-af60-d06c5051694c" name="Default" comment="2022.2.23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resume/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume/js/swiper/swiper.jquery.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,23 +21,6 @@
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>set</find>
-      <find>audio</find>
-      <find>index</find>
-      <find>index1</find>
-      <find>pics6</find>
-      <find>status2_pics</find>
-      <find>status2-pic</find>
-      <find>pics6_status2</find>
-      <find>pimg</find>
-      <find>bigimgbigimg</find>
-      <find>bigimg</find>
-      <find>outerdiv</find>
-      <find>logoImg</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,8 +74,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yanghuizhi/YhzPersonalMottoService/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yanghuizhi/Resume/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/yanghuizhi/YhzPayMoneyService/index.html" useBuiltInWebServerPort="true">
@@ -98,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (2)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
@@ -124,7 +113,7 @@
       <workItem from="1592274816286" duration="6943000" />
       <workItem from="1592400917380" duration="433000" />
       <workItem from="1645600134109" duration="204000" />
-      <workItem from="1645600773410" duration="357000" />
+      <workItem from="1645600773410" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1566451356541</created>
@@ -203,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592399934647</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2022.2.23">
+      <created>1645601154484</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1645601154484</updated>
+    </task>
+    <task id="LOCAL-00013" summary="2022.2.23">
+      <created>1645601172811</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1645601172811</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,66 +217,17 @@
     <MESSAGE value="update 0120" />
     <MESSAGE value="update 20200616" />
     <MESSAGE value="update 20200617" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 20200617" />
+    <MESSAGE value="2022.2.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022.2.23" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1920" y="209" key="CommitChangelistDialog2" timestamp="1592399933198">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="655" y="0" key="CommitChangelistDialog2" timestamp="1645601169548">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1920" y="209" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592399933198" />
-    <state x="2916" y="351" key="FileChooserDialogImpl" timestamp="1592228527206">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="655" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1645601169548" />
+    <state x="649" y="170" key="Vcs.Push.Dialog.v2" timestamp="1645601219861">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2916" y="351" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592228527206" />
-    <state width="1346" height="294" key="GridCell.Tab.0.bottom" timestamp="1584171117167">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.0.bottom/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117167" />
-    <state width="1346" height="294" key="GridCell.Tab.0.center" timestamp="1584171117166">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.0.center/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117166" />
-    <state width="1346" height="294" key="GridCell.Tab.0.left" timestamp="1584171117166">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.0.left/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117166" />
-    <state width="1346" height="294" key="GridCell.Tab.0.right" timestamp="1584171117167">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.0.right/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117167" />
-    <state width="1346" height="294" key="GridCell.Tab.1.bottom" timestamp="1584171117169">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.1.bottom/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117169" />
-    <state width="1346" height="294" key="GridCell.Tab.1.center" timestamp="1584171117168">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.1.center/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117168" />
-    <state width="1346" height="294" key="GridCell.Tab.1.left" timestamp="1584171117168">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.1.left/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117168" />
-    <state width="1346" height="294" key="GridCell.Tab.1.right" timestamp="1584171117169">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1346" height="294" key="GridCell.Tab.1.right/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584171117169" />
-    <state x="2451" y="169" key="SettingsEditor" timestamp="1592401337170">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2451" y="169" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592401337170" />
-    <state x="2909" y="381" key="Vcs.Push.Dialog.v2" timestamp="1592399938510">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2909" y="381" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1592399938510" />
-    <state x="384" y="-998" width="1188" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584166596177">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state x="384" y="-998" width="1188" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/50.23.1390.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584166596177" />
-    <state x="472" y="-696" key="com.intellij.ide.util.TipDialog" timestamp="1584166009063">
-      <screen x="-303" y="-1057" width="1920" height="1057" />
-    </state>
-    <state x="472" y="-696" key="com.intellij.ide.util.TipDialog/47.23.1393.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584156558415" />
-    <state x="472" y="-696" key="com.intellij.ide.util.TipDialog/48.23.1392.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584154563114" />
-    <state x="472" y="-696" key="com.intellij.ide.util.TipDialog/50.23.1390.877/-303.-1057.1920.1057@-303.-1057.1920.1057" timestamp="1584166009063" />
+    <state x="649" y="170" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1645601219861" />
   </component>
 </project>

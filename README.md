@@ -1,4 +1,4 @@
-## Hey，杨会智 <img src="https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/code.gif" width="25px">
+## Hey，杨会智 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 <br />
 
