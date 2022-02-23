@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7aa9c42-f008-407f-af60-d06c5051694c" name="Default" comment="update 20200617">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/YhzPayMoneyService" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,17 +74,18 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/YhzPersonalMottoService" />
-      <recent name="$PROJECT_DIR$/YhzPayMoneyService" />
-      <recent name="$PROJECT_DIR$/AppPayMoneyService" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonFiles\yanghuizhi\YhzPayMoneyService" />
       <recent name="E:\pypy\yanghuizhi" />
       <recent name="$PROJECT_DIR$/AppPayMoneyService" />
       <recent name="$PROJECT_DIR$/loveyou/NO1" />
       <recent name="$PROJECT_DIR$/loveyou/第一个/1/Love_files" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PythonFiles\yanghuizhi\YhzPayMoneyService" />
+      <recent name="$PROJECT_DIR$/YhzPersonalMottoService" />
+      <recent name="$PROJECT_DIR$/YhzPayMoneyService" />
+      <recent name="$PROJECT_DIR$/AppPayMoneyService" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -121,6 +123,8 @@
       <workItem from="1592228521393" duration="7000" />
       <workItem from="1592274816286" duration="6943000" />
       <workItem from="1592400917380" duration="433000" />
+      <workItem from="1645600134109" duration="204000" />
+      <workItem from="1645600773410" duration="357000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1566451356541</created>

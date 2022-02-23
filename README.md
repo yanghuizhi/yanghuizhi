@@ -1,14 +1,14 @@
-## Hey，杨会智 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+## Hey，杨会智 <img src="https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/code.gif" width="25px">
 
 <br />
 
-你好， 我是 [杨会智](https://juejin.cn/user/3984285870859614) ，出生于1993年，一位有5+工作经验的测试工程师。
+你好， 我是 [杨会智]() ，出生于1993年，一位有5+工作经验的测试工程师。
 
 <br />
 
   <img align="right" alt="GIF" src="https://github.com/likaia/likaia/blob/main/code.gif" width="330" height="50%" />
 
-- 💬 如果你对我感兴趣，可以加我[微信](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/index.html) 进一步交流。
+- 💬 如果你对我感兴趣，可以加我[微信](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/weichat_info.jpg) 进一步交流。
 - 📫 我的邮箱: [347818169@qq.com](mailto:347818169@qq.com);
 - 📝 [我的博客1](https://yanghuizhi.github.io)
 - 📝 [我的博客2](https://yanghuizhi.github.io/yanghuizhi/Resume)
