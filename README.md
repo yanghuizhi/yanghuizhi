@@ -6,3 +6,5 @@
 4. [协助协议](https://yanghuizhi.github.io/yanghuizhi/YhzPersonalMottoService/index.html)
 
 ![](https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark)
+
+https://img.shields.io/github/followers/%E6%88%91%E7%AC%AC%E4%B8%89%E6%96%B9?style=social
