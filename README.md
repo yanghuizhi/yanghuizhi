@@ -4,4 +4,5 @@
 2. [静态博客2](https://yanghuizhi.github.io/yanghuizhi/Resume)
 3. [二维码支付](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/index.html)
 4. [协助协议](https://yanghuizhi.github.io/yanghuizhi/YhzPersonalMottoService/index.html)
-5. ...
+
+![](https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark)
