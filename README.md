@@ -6,8 +6,8 @@
 
 <br />
 
-  <img align="right" alt="GIF" src="https://github.com/likaia/likaia/blob/main/code.gif" width="330" height="60%" />
-
+  <img align="right" alt="GIF" src="https://github.com/likaia/likaia/blob/main/code.gif" width="420" height="60%" />
+  
 - 💬 如果你对我感兴趣，可以加我[微信](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/weichat_info.jpg) 进一步交流。
 - 📫 我的邮箱: [347818169@qq.com](mailto:347818169@qq.com);
 - 📝 [博客测试1](https://yanghuizhi.github.io)
@@ -16,6 +16,8 @@
 - 📝 [协助协议](https://yanghuizhi.github.io/yanghuizhi/YhzPersonalMottoService/index.html)
 
 <img align="left" src="https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark" width="330" height="100%" />
+
+<br/><br/><br/><br/><br/>
 
 [LOVE](https://yanghuizhi.github.io/yanghuizhi/yanghuizhi/YhzLoveYouService/love1)
 
