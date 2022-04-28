@@ -6,7 +6,7 @@
 
 <br />
 
-  <img align="right" alt="GIF" src="https://github.com/likaia/likaia/blob/main/code.gif" width="420" height="60%" />
+  <img align="right" alt="GIF" src="https://github.com/likaia/likaia/blob/main/code.gif" width="390" height="60%" />
   
 - 💬 如果你对我感兴趣，可以加我[微信](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/weichat_info.jpg) 进一步交流。
 - 📫 我的邮箱: [347818169@qq.com](mailto:347818169@qq.com);
