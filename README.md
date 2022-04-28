@@ -14,7 +14,7 @@
 - 📝 [博客测试2](https://yanghuizhi.github.io/yanghuizhi/Resume)
 - 📝 [二维码支付](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/index.html)
 - 📝 [协助协议](https://yanghuizhi.github.io/yanghuizhi/YhzPersonalMottoService/index.html)
-- [MODEL](https://yanghuizhi.github.io/yanghuizhi/yanghuizhi/YhzLoveYouService/love1)
+- [MODEL](https://yanghuizhi.github.io/yanghuizhi/YhzLoveYouService/love6)
 
 <img align="left" src="https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark" width="330" height="100%" />
 
