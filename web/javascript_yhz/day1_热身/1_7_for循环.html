@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        语法：
+            for(初始表达式;条件表达式;更新表达式;){
+                语句...
+            }
+        */
+
+        // 打印 1-100 之间所有奇数之和
+//      var num = 0;
+//      // 判断合法
+//      for(var i = 0; i <= 100; i++){
+//             document.write('<br />');
+//             document.write(i);
+//
+//          //判断 i 是否是奇数
+//          if (i%2 != 0){
+//              num = num + i
+//          }
+//      }
+//      document.write("所有奇数的和是: "+num);
+
+//		打印九九乘法表
+		for(var i=1; i<=9; i++){
+			for(var j=1; j<=i; j++){
+//				document.write(j+"*"+i+"="+i*j+"&nbsp")
+				document.write("<span>"+j+"*"+i+"="+i*j+"</span>")
+			}
+			document.write("<br/>")	
+		}
+	</script>
+	
+	<style type="text/css">
+	  	span{
+	  		display: inline-block;
+	  		width: 80px;
+	  	}
+	</style>
+	
+	
+	<!--打印 2-100之间所有数-->
+	<script>
+		console.time("test")   // 开启计时器来算一下时间
+		for (var i=2; i<=100; i++) {
+			var flag = true;
+			for(var j=2; j<=Math.sqrt(i); j++){
+				if(i%j == 0){	// 如果进入判断，则证明i不是质数
+					flag=false;	// 修改flag的值
+					// 一旦进入判断，则证明i不是质数，此时循环在执行已经没有任何意义了
+					break;  //使用break来结束循环 
+				}
+			}
+			if(flag){
+				console.log(i)
+			}
+		}
+		
+		console.timeEnd("time") // 终止计时器
+	</script>
+	
+</head>
+<body>
+
+</body>
+</html>

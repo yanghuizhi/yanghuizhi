@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#box {
+    font-size:16px; 		/* 字体大小，一般都是偶数，最小是12*/
+    font-family:"宋体";		/* 字体类型（中文默认宋体）*/
+    font-style:normal;		/* 字体样式（italic 倾斜、normal 正常） */
+    font-weight:normal;		/* 文字着重（bold 粗体、normal 正常） */
+    color:#F00;				/* 字体颜色(英文、rgb、十六进制等等) */
+    line-height:30px;		/* 行高 */
+    text-align:left;		/* 文本对齐方式(center/right) */
+    text-indent:2em;		/* 首行缩进（em缩进字符） */
+    text-decoration:none;	/* 文本修饰（underline 下划线、overline 上划线、line-through 删除线） */
+    letter-spacing:10px;	/* 字母间距 */
+    word-spacing:10px;		/* 单词间距（以空格为解析单位） */
+}
+
+
+
+
+
+

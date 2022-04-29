@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base target="_self"/>  <!-- 定义页面中所有链接打开方式 -->
+
+    <style>
+
+    /* A伪类：伪类用于向被选中元素添加特殊的效果。（元素在特定情况下才具备的。） */
+    a:link{font-size:15px;text-decoration:none;color:red;}          /* 未访问（默认） */
+    a:visited{color:fuchsia;}                                       /* 鼠标悬停（鼠标划过）*/
+    a:hover{color:blue;text-decoration:underline;font-size:22px;}   /* 链接激活（鼠标按下）*/
+    a:active{color:yellow;}                                         /* 访问过后（点击过后）*/
+
+    </style>
+
+    <!--<style> /* 默认样式重置 */-->
+    <!--body,p,h1,h2,h3,h4,h5,h6,dl,dd{margin: 0px; font-size: 12px; /* font-family: "Adobe 仿宋 Std R"  */}  /* 因为body 默认有一个外边距为8像素的距离，这个可以去掉 */-->
+    <!--ol,ul{list-style:none; padding: 0px; margin: 0px;}-->
+    <!--a{text.txt-decoration: none;}-->
+    <!--image_yhz{border: none;}-->
+    <!--</style>-->
+    <!---->
+</head>
+
+<body>
+
+    <img src="../image_yhz/g2.png" alt="当图片无法显示的时候，显示这里的文字" height="128" width="128"/>
+
+    <br/>   <!-- 折行符  -->
+
+    <a href="https://www.baidu.com/" target="_blank">a标签（链接）</a>
+    <!-- tagget：选择跳转方式,可以在 head 统一设置-->  &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="../css_yhz/1_基本学习.css">a标签（下载功能）</a>
+    <a href="#">仅代表当前页，无反应 </a>
+    <a href="#box22">a标签（跳转到A位置）</a>
+    <a href="#box23">a标签（跳转到B位置）</a>
+
+    <br/>   <!-- 换行符 -->
+
+    <p>我是段落标签</p>   <!-- 段落标签 -->
+
+    <div>我是一个块</div>   <!-- div样式块 -->
+
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5</h5>
+    <h6>标题6</h6>
+
+    <strong>强调标签（页面展示为粗体）</strong>
+
+    <em>强调标签（页面展示为斜体）</em>
+
+    <span>区分样式</span>让某段文字中<span style="color:red">某些文字</span>不一样  <!-- 区分样式 -->
+
+    <ol>    <!-- 有序列表标签-->
+        <li>有序列表标签</li>
+        <li>第一行</li>
+        <li>第二行</li>
+
+    </ol>
+
+    <ul>    <!-- 无序列表标签-->
+        <li>无序列表标签</li>
+        <li>第一行</li>
+        <li>第二行</li>
+
+    </ul>
+
+    <dl>    <!-- 自定义标签-->
+        <dt>自定义标签</dt>
+        <dt>标题头</dt>
+        <dd>第一行</dd>
+        <dd>第二行</dd>
+    </dl>
+
+    <div id="box22" style="height: 1000px;">
+        我是A位置        <br/>
+        通过锚点，通过id来在本页内进行设置
+    </div>
+
+    <div id="box23" style="height: 1000px;">
+        我是B位置
+<br/><br/>
+    a标签介绍：
+        href:
+            1、url：       填写网页地址，可以起到连接、跳转的作用
+            2、download：  下载作用，可以放入文件、压缩包
+            3、 #id：      锚点，放入 id 属性，可以在当前页面进行跳转
+            4、#：         当href属性什么都没有的时候，通常放个#，代表当前网页
+        target:
+            "_self"  在当前页面打开
+            "_blank: 新页面打开
+        如果标签比较多，需要在头部设置默认属性，参照head部分
+
+        伪类选择器:伪类用于向被选中元素添加特殊的效果。（元素在特定情况下才具备的。）
+        参照head去设置标签的伪类(不只是支持a标签，div和其他标签也支持)
+            link           未访问（默认）
+            hover          鼠标悬停（鼠标划过）
+            active         链接激活（鼠标按下）
+            visited        访问过后（点击过后）
+
+            四个伪类的顺序：
+            link    visited    hover  active
+            （love hate 记忆方法！）
+
+    </div>
+</body>
+</html>

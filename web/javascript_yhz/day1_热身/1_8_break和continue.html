@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关键字</title>
+		<script type="text/javascript">
+			/*
+			 * break关键字可以用来退出switch或循环语句
+			 * 	不能再if语句中使用break和continue
+			 * break关键字，会立即终止理他最记得那个循环语句
+			 */
+			for (var i=0; i<5; i++) {
+				console.log(i);
+//				break;
+				if(i==2){
+					break;		//这里是对for使用，而不是对if使用
+					continue	// 跳过当次循环，打印出来没有2
+				}
+				console.log(i)
+			}
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

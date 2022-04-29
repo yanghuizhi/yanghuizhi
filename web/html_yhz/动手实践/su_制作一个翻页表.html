@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style> /* 默认样式重置 */
+    body,p,h1,h2,h3,h4,h5,h6,dl,dd{margin: 0px; font-size: 12px; /* font-family: "Adobe 仿宋 Std R"  */}  /* 因为body 默认有一个外边距为8像素的距离，这个可以去掉 */
+    ol,ul{list-style:none; padding: 0px; margin: 0px;}
+    a{text-decoration: none;}
+    img{border: none;}
+    .pages{height: 60px; background: #e8e8e8; width: 600px; margin: 90px auto;
+            text-align: center; }
+    .pages a{background: #ffffff;border: 1px solid #cdcdcd; color: #333333;
+             padding: 0 8px 0 9px; height: 28px; line-height: 28px;
+             display: inline-block; /* 使内联内嵌标签支持宽高，block属于竖排显示 */}
+    .pages a:hover{border-color: red; color: red;}
+    .pages .active{font-weight: bold; background: #fcf9ea; cursor: text;}
+    .pages .active:hover{border-color: #cdcdcd; color:#333333;}  /* 为了看不到划过的是标养室 */
+    /* 看不到的东西不一样不存在，有可能是被覆盖了哦，a:hover被下面更深一级的.active:hover覆盖了*/
+    body{height: 1500px; cursor: url(hand.cur),pointer;}
+    /* 增加一个光标类型，建议用.cur；加了一个逗号表示，如果图片执行不了，就会执行后面的pointer */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="pages">
+        <a href="#">上一页</a>  <!-- a标签属于内联内嵌标签，所有内嵌都不支持宽高 -->
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="active">3</a>
+        <a href="#">4</a>
+        <a href="#">15</a>
+        <a href="#">211</a>
+        <a href="#">250...</a>
+        <a href="#">下一页</a>
+    </div>
+
+</body>
+</html>

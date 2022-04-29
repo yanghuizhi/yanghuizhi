@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选取元素</title>
+</head>
+<body>
+<form id= "infor">
+    <input name="like" type="checkbox">
+    <input name="like" type="checkbox">
+    <input name="like" type="checkbox">
+    <input name="like" type="checkbox">
+</form>
+
+
+    <script>
+        const inputs = document.getElementsByName('like');
+        console.log(inputs);
+        console.log("获取到的带name属性的元素有"+inputs.length+"个");
+    </script>
+</body>
+</html>

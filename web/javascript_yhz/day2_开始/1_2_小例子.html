@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热身课程——变形</title>
+    <style>
+        div { width: 200px; height: 200px; background: red;
+            display: none;}     /* display 显示/隐藏 */
+        ul ul{padding: 0; margin: 0; width: 140px; border: 1px solid #993333;
+            position: absolute; top:30px; left: -1px; background: #FFFF00;
+            display: none;}  /* display 首次显示下拉列表*/
+        ul ul li{text-align: center; line-height: 30px;}
+    </style>
+    <script>
+        window.onload = function () {
+            const oBtn1 = document.getElementById("show_btn");
+            const oBtn2 = document.getElementById("hide_btn");
+            const oDiv = document.getElementById("div1");
+            const ostrong = document.getElementById("strong1");
+
+             // 当多个方法使用同样一些操作之后，使用有名字的函数比匿名函数方便
+            ostrong.onclick = show
+            oBtn1.onclick = show
+
+            function show() {
+                oDiv.style.display = "Block";
+                oDiv.style.width = '300px';
+                oDiv.style.background = "yellow";}
+
+            oBtn2.onclick = function () {
+                oDiv.style.display = "none";}
+        }
+
+    </script>
+
+</head>
+<body>
+
+<input id="show_btn" type="button" value="显示">
+<input id="hide_btn" type="button" value="隐藏">
+
+<strong id="strong1">我也要让它显示~~</strong>
+
+<div id="div1"></div>
+
+</body>
+</html>

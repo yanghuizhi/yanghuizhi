@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/default/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/beautiful.css">
+    <script src="/default/jquery-3.3.1.min.js"></script>
+    <script src="/default/bootstrap.min.js"></script>
+    <title>乱世王者</title>
+</head>
+<body>
+5000 * 32 * 9.5
+
+共计加速 300,000 分钟
+
+可训练士兵 562,500 个
+
+可增加战力 5,343,750
+
+5000*27 *8.2
+共计加速 300,000 分钟
+
+可训练士兵 666,666 个
+
+可增加战力 5,466,661
+
+共计加速 300,000 分钟
+
+可训练士兵 900,000 个
+
+可增加战力 6,300,000
+
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-dark">
+    <!-- Logo -->
+    <img src="/img/logo_circle.png" alt="xiaogongju">乱世小工具</img>
+
+</nav>
+    <div class="container-fluid mb-4 ">
+        <h3 >练兵计算器</h3>
+    </div>
+
+<form method="get" id="for1">
+    <input type="hidden" name="has_params" value="True">
+
+    <div class="row justify-content-center">
+        <label class="col-form-label-lg">训练加速总时间：</label>
+        <input type="number" id="jiasu1" class="jiasu1">小时
+        <input type="number" class="jiasu2">分钟
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-form-label-lg">通用加速总时间：</label>
+        <input type="number" class="jiasu3">小时
+        <input type="number" class="jiiasu4">分钟
+    </div>
+
+    <hr/>
+
+    <div class="row justify-content-center">
+        <label class="col-form-label-lg mt-auto mb-auto">单个兵种</label>
+        <div>训练时长
+        <input type="number" class="form-control">秒
+        &nbsp;&nbsp;&nbsp; 对应战力：
+        <input type="number" class="form-control">战力</div>
+    </div>
+
+    <hr/>
+
+
+        <button type="submit" id="star" onclick="people()">开始计算</button>
+
+</form>
+
+<script>
+    // const people = document.getElementById("star");
+    function people() {
+        const x1 = document.getElementsByClassName('jiasu1');
+        const x11=document.getElementById('jiasu1')
+        const x2 = document.getElementsByClassName('jiasu2');
+        const x3 = document.getElementsByClassName('jiasu3');
+        const x4 = document.getElementsByClassName('jiasu4');
+        const num=(x1+x3)*60+(x2+x4);
+        console.log(x1.valueOf())
+    }
+
+</script>
+
+</body>
+</html>
+

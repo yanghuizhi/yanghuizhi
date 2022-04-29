@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 * 使用工厂方式创建对象
+			 * 		有局限，都是一个object，用的不多
+			 */
+			
+			function createPerson(name, age){
+				var obj = new Object();
+				
+				obj.name = name;
+				obj.age = age;
+				obj.sayName = function(){
+					alert(this.name);
+				};
+				return obj;
+			}
+			
+			var obj2 = createPerson("孙悟空",28);
+			var obj3 = createPerson("猪八戒",28);
+			obj2.sayName();
+			obj3();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        键盘输入小名的期末成绩：
+            当成绩为100时，奖励一台电脑
+            当成绩为80-99时，奖励一台手机
+            当成绩为60-80时，奖励一台游戏机
+            其他时，什么奖励也没有
+        */
+
+        const score = prompt("请输入小名的期末成绩：")
+        // 判断合法
+        if (score > 100 || score < 0 || isNaN(score)) {
+            alert("你这不会输入啊！！！")
+        }else {     // 总逻辑
+            if (score == 100){
+                alert("奖励一台电脑")
+            } else if (score >= 80){
+                alert("奖励一台手机")
+            } else if (score >= 60){
+                alert("奖励一台游戏机")
+            } else {
+                alert("滚蛋吧，肿瘤君！")
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

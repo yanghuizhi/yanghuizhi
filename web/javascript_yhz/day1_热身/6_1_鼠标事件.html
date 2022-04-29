@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .btn {
+            width: 140px;
+            height: 30px;
+            line-height: 30px;
+            background: #00f;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="弹出" onclick="alert('我是按钮')"/>
+    <div id="btn" class="btn"
+         onmouseover="mouseoverFn(this,'#000')"
+         onmouseout="mouseoutFn(this,'#321')">开始</div>
+    <div id="btn1" class="btn"
+         onmouseover="mouseoverFn(this,'#00f')"
+         onmouseout="mouseoutFn(this,'#654')">结束</div>
+    <script>
+        function mouseoverFn(btn,bgColor) {
+            // 鼠标划过按钮时，按钮背景色为红色
+            btn.style.background=bgColor;
+        }
+        function mouseoutFn(btn,bgColor) {
+            btn.style.background=bgColor;
+        }
+    </script>
+</body>
+</html>
+
+<!--
+鼠标事件
+- onload :页面加载时触发
+- onclick :鼠标点击时触发
+- onmouseover :鼠标滑过时触发
+- onmouseout :鼠标离开时触发
+- onfoucs :获得焦点时触发
+- onblur :失去焦点时触发
+- onchange :域的内容改变时发生
+-->
+
+<!--
+键盘事件与keyCode属性
+onkeydown : 在用户按下一-个键盘按键时发生
+onkeypress :在键盘按键被按下并释放-个键时发生
+onkeyup :在键盘按键被松开时发生
+keyCode :返回onkeypress. onkeydown 或onkeyup事件触发的键的值
+的字符代码,或键的代码。
+-->

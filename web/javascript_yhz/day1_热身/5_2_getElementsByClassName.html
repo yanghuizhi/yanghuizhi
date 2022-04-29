@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选取元素</title>
+</head>
+<body>
+
+<div class="news">
+    <p class=" new1" >新闻标题1</p>
+    <p class= "new2" >新闻标题2 </p>
+    <p class= " new1" >新闻标题3</p>
+</div>
+
+
+<!--通过css类选择-->
+    <script>
+        const div = document.getElementsByClassName('news')[0];
+        const new1 = div.getElementsByClassName('new1');
+        const new2 = div.getElementsByClassName('new2');
+        console.log(div);
+        console.log(new1);
+        console.log(new2);
+    </script>
+</body>
+</html>
+
+<!--
+分析:
+通过CSS类选取到的元素也是一个类数组对象, 也要像数组一样,下标从0
+开始算起,找到数组中的某个元素。
+
+本例中,通过getElementsByClassName(" news' ")[0];获取到了第一个
+div ,他的子元素P标签是在它的基础上再通过类选择器获取元素的
+
+如果不加下标直接写 var div=document.getElementsByClassName(" news");的话，那么我们获
+取到的是一个‘类名为news'的数组,这时控制台会提示:类型错误
+也就是这个div是CSS‘类名为 news'的数组,并不是p标签的父元素
+-->

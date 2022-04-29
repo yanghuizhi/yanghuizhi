@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CSS 精灵</title>
+    <style>
+        div{width:80px;height:80px;background:url(../image_yhz/bigptr.jpg) no-repeat;border:10px solid #000;float:left;margin:10px; display:inline;}
+        .box1{ background-position:-151px -66px;}   /* 从一张图片取数值 */
+        .box2{ background-position:-241px -118px;}
+        .box3{ background-position:right bottom;}
+    </style>
+</head>
+<body>
+<!--
+CSS精灵 优点：
+        利用CSS 精灵能很好地减少了网页的http请求次数，从而大大的提高了页面的性能，
+    这也是CSS 精灵最大的优点；减少图片大小
+CSS精灵 缺点：
+    降低开发效率；
+    维护难度加大；
+-->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

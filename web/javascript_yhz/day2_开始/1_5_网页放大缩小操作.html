@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        window.onload = function () {
+            const oBtn1 = document.getElementById('btn1');
+            const oBtn2 = document.getElementById('btn2');
+            const oBtn3 = document.getElementById('btn3');
+            const oBtn4 = document.getElementById('btn4');
+            const oP = document.getElementById('p1');
+
+            var num = 15;
+            oBtn1.onclick = function () {
+                num --;
+                oP.style.fontSize = num + 'px';
+            };
+
+            oBtn2.onclick = function () {
+                num ++;
+                oP.style.fontSize = num + 'px';
+            };
+
+            oBtn3.onclick = function () {
+                // oP.style.width = '300px';
+                // oP.style.background = 'red';
+                // oP.style.padding = '20px';
+                // oP.style.color = 'yellow';
+                // oP.style.border = '10px solid #ccc';
+                oP.className = 'red';
+            }
+
+            oBtn4.onclick = function () {
+                oP.className = 'yellow';
+            }
+        };
+    </script>
+    <style>
+        .red {
+            width: 300px;
+            background:red;
+            padding: 20px;
+            color: yellow;
+            border: 10px solid #CCC;}
+        .yellow {
+            width: 500px;
+            background:red;
+            padding: 20px;
+            color: blue;
+            border: 10px solid #444;}
+    </style>
+</head>
+<body>
+
+<input id="btn1" type="button" value="-">
+<input id="btn2" type="button" value="+">
+<input id="btn3" type="button" value="红">
+<input id="btn4" type="button" value="黄">
+<p id="p1">茜茜傻傻的</p>
+
+</body>
+</html>

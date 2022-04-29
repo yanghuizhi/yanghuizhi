@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+   /*
+	* 函数
+	* - 函数也是一个对象
+	* - 函数也可以封装一些功能（代码），在需要的时候可以执行这些功能（代码）
+	*
+	* 语法一：
+	*	 function 函数名([形参1，形参2，。。。]){
+	* 		语句。。。。。
+	*	 }
+	*
+	* 语法二：匿名函数
+	* 	var 函数名 = function([形参1，形参2，。。]){
+	* 		语句。。、。、、
+	* 	}
+	*/
+
+	// 一、声明函数并使用
+	function myFun() {
+		alert("我是常规使用方法");
+		console.log('我是常规使用方法')
+	}
+	// 函数的调用
+	myFun();
+
+	// 二、设置函数并使用
+	var myFun1 = new Function(
+		console.log('设置函数')
+	);
+    myFun1();
+
+	// 三、带有参数的函数
+	function add(num1,num2) {
+		var sum=num1+num2;
+		alert(`${num1}+${num2}=${sum}`)
+	}
+	add(1,2);
+	add(2,3)
+
+	//	匿名函数，立即执行函数
+	//	函数定义完,立即被调用,且只会执行一次;
+	(function(){
+		console.log("立即执行");
+	})();
+</script>
+</head>
+<body>
+</body>
+</html>

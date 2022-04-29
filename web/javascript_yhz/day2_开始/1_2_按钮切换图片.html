@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+/*
+    HTML属性操作： 读、写
+        属性名 = 属性值
+
+    属性读操作： 获取、找到
+        元素.属性名
+
+    属性写操作： （“添加”）替换、修改
+        元素.属性名 = 新的值
+
+    字符串连接
+ */
+window.onload = function () {
+    const oBtn = document.getElementById("btn1")
+    const oText = document.getElementById("text1")
+    const oImg = document.getElementById("img1")
+
+    oBtn.onclick = function(){      // 属性读操作
+        oImg.src = oText.value;
+    }
+
+
+}
+
+</script>
+
+</head>
+<body>
+
+<input id="text1" type="text">
+<input id="btn1" type="button" value="按钮"/>
+<br/>
+<img id="img1" src="../../image_yhz/b13.png" width="300px"/>
+
+</body>
+</html>

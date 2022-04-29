@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .text span{
+            font-weight: bold;
+            color: #FF0000;
+        }
+        em{
+            font-style: normal;
+
+        }
+    </style>
+</head>
+<body>
+    <p class="text">您还可以输入
+        <span>
+            <em id="count"> 30 </em> /30
+        </span>
+    </p>
+    <div class="input">
+        <textarea name="" id="text" cols="70" rows="4"></textarea>
+    </div>
+
+    <script>
+        // 在事件触发的function里，用一个参数接收事件对象
+        // document.onkeydown=function(event){
+        //     console.log(event.keyCode);
+        // }
+
+        // 获取文本框
+        var text=document.getElementById('text');
+        var total=30;
+        var count=document.getElementById('count')
+        //绑定键盘事件
+        document.onkeyup=function () {
+            //    获取文本框的长度
+            var len=text.value.length;
+            var allow=total-len
+            count.innerHTML=allow
+        }
+
+
+    </script>
+</body>
+</html>
+
+<!--
+键盘事件与keyCode属性
+onkeydown : 在用户按下一-个键盘按键时发生
+onkeypress :在键盘按键被按下并释放-个键时发生
+onkeyup :在键盘按键被松开时发生
+keyCode :返回onkeypress. onkeydown 或onkeyup事件触发的键的值
+的字符代码,或键的代码。
+-->

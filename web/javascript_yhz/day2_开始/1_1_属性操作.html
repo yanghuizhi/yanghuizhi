@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+/*
+    HTML属性操作： 读、写
+        属性名 = 属性值
+
+    属性读操作： 获取、找到
+        元素.属性名
+
+    属性写操作： （“添加”）替换、修改
+        元素.属性名 = 新的值
+
+    字符串连接
+ */
+window.onload = function () {
+    const oBtn = document.getElementById("btn1")
+    const oText = document.getElementById("text1")
+    const oSelect = document.getElementById("select1")
+
+    oBtn.onclick = function(){      // 属性读操作
+        // alert(oBtn.value);
+        // alert(oText.value);
+        // alert(oselect.value);
+
+        // "淘宝" + "杭州" = "淘宝杭州"
+        // "淘宝" + "在" + "杭州" = "淘宝在杭州"
+        // alert(oText.value + '在'+ oSelect.value);    // 字符串连接
+        // oBtn.value = 'button';      // 替换、修改
+        // oText.value = '按钮';       // 替换、修改
+        // oText.value = oSelect.value;   // 替换、修改
+    }
+
+
+}
+
+</script>
+
+</head>
+<body>
+
+<input id="text1" type="text">
+<select id="select1">
+    <option value="北京">北京</option>
+    <option value="上海">上海</option>
+    <option value="杭州">杭州</option>
+</select>
+<input id="btn1" type="button" value="按钮"/>
+<br/>
+<img src="../../image_yhz/b13.png" width="300px">
+</body>
+</html>

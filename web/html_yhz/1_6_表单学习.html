@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>  /* 重置是为了不受默认元素的影响*/
+        form{margin: 0;}
+        input{margin: 0;padding: 0;}
+        select{margin: 0; width: 100px;}  /* 通常只是加宽，高一般不支持*/
+        textarea{margin: 0; padding: 0; resize: none; overflow: auto;}
+
+        form{border: 1px solid red;}
+    </style>
+</head>
+<body>
+    <form action="https://www.baidu.com" method="get" target="_blank">
+        提交按钮：
+        <input type="submit" value="提交OK" name=""/>
+    <br/><br/>
+        文本框：
+        <input type="text" name=""/>
+    <br/><br/>
+        密码框：
+        <input type="password" name=""/>
+    <br/><br/>
+        单选按钮：
+        <label></label>
+        <input type="radio" name="gender" id="man"/><label for="man">男</label>
+        <input type="radio" name="gender" id="woman"/><label for="woman">女</label>
+    <br/><br/>
+        复选框：
+         <!--
+        checked  默认选中
+        disabled 禁用
+         -->
+        <input type="checkbox" name="" disabled/>宅
+        <input type="checkbox" name="" disabled/>肥
+        <input type="checkbox" name="" checked/>帅
+        <input type="checkbox" name=""/>美
+        <input type="checkbox" name=""/>瘦
+    <br/><br/>
+    <hr/>
+        上传：
+        <input type="file" name=""/>
+    <br/><br/>
+         图片:
+        <input type="image" src="../image_yhz/b13.png" name=""/>
+    <br/><br/>
+         按钮:
+        <input type="button" name=""/>
+    <br/><br/>
+         重置:
+        <input type="reset" name=""/>
+    <br/><br/>
+         隐藏按钮:
+        <input type="hidden" name=""/>
+    <br/><br/>
+    <hr/>
+
+    <select>
+        <option>1993</option>
+        <option>1994</option>
+        <option selected>1995</option>   <!--默认选择 selected-->
+        <option>1996</option>
+        <option>1997</option>
+    </select>
+    <br/><br/>
+        文本域：
+        <textarea></textarea>
+
+    </form>
+
+</body>
+</html>
