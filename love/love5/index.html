@@ -55,13 +55,13 @@ makecircle = function(){ // rotation/positioning
  if(init.nopy){
   o.style.top = (b || document.body).scrollTop + 'px';
   o.style.left = (b || document.body).scrollLeft + 'px';
- };
+ }
  currStep -= rotation;
  for (var d, i = n; i > -1; --i){ // makes the circle
   d = document.getElementById('iemsg' + i).style;
   d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
   d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
- };
+ }
 },
 drag = function(){ // makes the resistance
  y[0] = Y[0] += (ymouse - Y[0]) * speed;
@@ -69,7 +69,7 @@ drag = function(){ // makes the resistance
  for (var i = n; i > 0; --i){
   y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
   x[i] = X[i] += (x[i-1] - X[i]) * speed;
- };
+ }
  makecircle();
 },
 init = function(){ // appends message divs, & sets initial values for positioning arrays
@@ -82,7 +82,7 @@ init = function(){ // appends message divs, & sets initial values for positionin
   d.style.height = d.style.width = a + 'px';
   d.appendChild(document.createTextNode(msg[i]));
   oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
- };
+ }
  o.appendChild(oi); document.body.appendChild(o);
  setInterval(drag, 25);
 },
@@ -102,7 +102,7 @@ if (window.addEventListener){
 else if (window.attachEvent){
  window.attachEvent('onload', init);
  document.attachEvent('onmousemove', mouse);
-};
+}
 })();
 </script> 
 <script type="text/javascript"> 
@@ -278,13 +278,13 @@ makecircle = function(){ // rotation/positioning
  if(init.nopy){
   o.style.top = (b || document.body).scrollTop + 'px';
   o.style.left = (b || document.body).scrollLeft + 'px';
- };
+ }
  currStep -= rotation;
  for (var d, i = n; i > -1; --i){ // makes the circle
   d = document.getElementById('iemsg' + i).style;
   d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
   d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
- };
+ }
 },
 drag = function(){ // makes the resistance
  y[0] = Y[0] += (ymouse - Y[0]) * speed;
@@ -292,7 +292,7 @@ drag = function(){ // makes the resistance
  for (var i = n; i > 0; --i){
   y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
   x[i] = X[i] += (x[i-1] - X[i]) * speed;
- };
+ }
  makecircle();
 },
 init = function(){ // appends message divs, & sets initial values for positioning arrays
@@ -305,7 +305,7 @@ init = function(){ // appends message divs, & sets initial values for positionin
   d.style.height = d.style.width = a + 'px';
   d.appendChild(document.createTextNode(msg[i]));
   oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
- };
+ }
  o.appendChild(oi); document.body.appendChild(o);
  setInterval(drag, 25);
 },
@@ -325,7 +325,7 @@ if (window.addEventListener){
 else if (window.attachEvent){
  window.attachEvent('onload', init);
  document.attachEvent('onmousemove', mouse);
-};
+}
 })();
 </script> 
 <center><div style="border: 2px solid ; overflow: auto; color: black; background-color: gray; width: 80%;
@@ -367,7 +367,7 @@ else{
 n=0
 clearInterval(flashing)
 setTimeout("beginneon()",1500)
-return
+
 }
 }
 function beginneon(){
@@ -420,11 +420,11 @@ var rows=1; // must be an odd number
 var speed=10; // lower is faster
 var reveal=2; // between 0 and 2 only. The higher, the faster the word appears
 var effectalign="default" //enter "center" to center it.
-var w3c=document.getElementById && !window.opera;;
+var w3c=document.getElementById && !window.opera;
 var ie45=document.all && !window.opera;
 var ma_tab, matemp, ma_bod, ma_row, x, y, columns, ma_txt, ma_cho;
-var m_coch=new Array();
-var m_copo=new Array();
+var m_coch=[];
+var m_copo=[];
 function matrix() {
 if (!w3c && !ie45) return
 var matrix=(w3c)?document.getElementById("matrix"):document.all["matrix"];

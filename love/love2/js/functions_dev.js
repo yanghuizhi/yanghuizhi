@@ -39,13 +39,13 @@ function getHeartPoint(angle) {
 	var t = angle / Math.PI;
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
 	var y = - 20 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
-	return new Array(offsetX + x, offsetY + y);
+	return [offsetX + x, offsetY + y];
 }
 
 function startHeartAnimation() {
 	var interval = 50;
 	var angle = 10;
-	var heart = new Array();
+	var heart = [];
 	var animationTimer = setInterval(function () {
 		var bloom = getHeartPoint(angle);
 		var draw = true;

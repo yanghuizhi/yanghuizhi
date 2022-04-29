@@ -1361,7 +1361,7 @@
             root.logger.debug(funcCode + "\n\n>>>\n\n" + newCode);
             
             return codeGenerator(newCode);
-        };
+        }
 
         root.compile = compile;
         
@@ -1375,12 +1375,12 @@
         module.exports.init = function (root) {
             if (!root.modules["parser"]) {
                 require("./jscex-parser").init(root);
-            };
+            }
             
             init(root);
         }
     } else if (isAmd) {
-        define("jscex-jit", ["YhzLoveYouService/love1/Love_files/jscex-parser"], function (parser) {
+        define("jscex-jit", ["love/love1/Love_files/jscex-parser"], function (parser) {
             return {
                 init: function (root) {
                     if (!root.modules["parser"]) {

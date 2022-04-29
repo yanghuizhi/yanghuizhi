@@ -211,28 +211,28 @@ var UNICODE = {
 
 function is_letter(ch) {
         return UNICODE.letter.test(ch);
-};
+}
 
 function is_digit(ch) {
         ch = ch.charCodeAt(0);
         return ch >= 48 && ch <= 57; //XXX: find out if "UnicodeDigit" means something else than 0..9
-};
+}
 
 function is_alphanumeric_char(ch) {
         return is_digit(ch) || is_letter(ch);
-};
+}
 
 function is_unicode_combining_mark(ch) {
         return UNICODE.non_spacing_mark.test(ch) || UNICODE.space_combining_mark.test(ch);
-};
+}
 
 function is_unicode_connector_punctuation(ch) {
         return UNICODE.connector_punctuation.test(ch);
-};
+}
 
 function is_identifier_start(ch) {
         return ch == "$" || ch == "_" || is_letter(ch);
-};
+}
 
 function is_identifier_char(ch) {
         return is_identifier_start(ch)
@@ -242,7 +242,7 @@ function is_identifier_char(ch) {
                 || ch == "\u200c" // zero-width non-joiner <ZWNJ>
                 || ch == "\u200d" // zero-width joiner <ZWJ> (in my ECMA-262 PDF, this is also 200c)
         ;
-};
+}
 
 function parse_js_number(num) {
         if (RE_HEX_NUMBER.test(num)) {
@@ -252,7 +252,7 @@ function parse_js_number(num) {
         } else if (RE_DEC_NUMBER.test(num)) {
                 return parseFloat(num);
         }
-};
+}
 
 function JS_Parse_Error(message, line, col, pos) {
         this.message = message;
@@ -263,8 +263,8 @@ function JS_Parse_Error(message, line, col, pos) {
                 ({})();
         } catch(ex) {
                 this.stack = ex.stack;
-        };
-};
+        }
+}
 
 JS_Parse_Error.prototype.toString = function() {
         return this.message + " (line: " + this.line + ", col: " + this.col + ", pos: " + this.pos + ")" + "\n\n" + this.stack;
@@ -272,11 +272,11 @@ JS_Parse_Error.prototype.toString = function() {
 
 function js_error(message, line, col, pos) {
         throw new JS_Parse_Error(message, line, col, pos);
-};
+}
 
 function is_token(token, type, val) {
         return token.type == type && (val == null || token.value == val);
-};
+}
 
 var EX_EOF = {};
 
@@ -295,7 +295,7 @@ function tokenizer($TEXT) {
                 comments_before : []
         };
 
-        function peek() { return S.text.charAt(S.pos); };
+        function peek() { return S.text.charAt(S.pos); }
 
         function next(signal_eof) {
                 var ch = S.text.charAt(S.pos++);
@@ -309,23 +309,23 @@ function tokenizer($TEXT) {
                         ++S.col;
                 }
                 return ch;
-        };
+        }
 
         function eof() {
                 return !S.peek();
-        };
+        }
 
         function find(what, signal_eof) {
                 var pos = S.text.indexOf(what, S.pos);
                 if (signal_eof && pos == -1) throw EX_EOF;
                 return pos;
-        };
+        }
 
         function start_token() {
                 S.tokline = S.line;
                 S.tokcol = S.col;
                 S.tokpos = S.pos;
-        };
+        }
 
         function token(type, value, is_comment) {
                 S.regex_allowed = ((type == "operator" && !HOP(UNARY_POSTFIX, value)) ||
@@ -345,12 +345,12 @@ function tokenizer($TEXT) {
                 }
                 S.newline_before = false;
                 return ret;
-        };
+        }
 
         function skip_whitespace() {
                 while (HOP(WHITESPACE_CHARS, peek()))
                         next();
-        };
+        }
 
         function read_while(pred) {
                 var ret = "", ch = peek(), i = 0;
@@ -359,11 +359,11 @@ function tokenizer($TEXT) {
                         ch = peek();
                 }
                 return ret;
-        };
+        }
 
         function parse_error(err) {
                 js_error(err, S.tokline, S.tokcol, S.tokpos);
-        };
+        }
 
         function read_num(prefix) {
                 var has_e = false, after_e = false, has_x = false, has_dot = prefix == ".";
@@ -397,7 +397,7 @@ function tokenizer($TEXT) {
                 } else {
                         parse_error("Invalid syntax: " + num);
                 }
-        };
+        }
 
         function read_escaped_char() {
                 var ch = next(true);
@@ -413,7 +413,7 @@ function tokenizer($TEXT) {
                     case "u" : return String.fromCharCode(hex_bytes(4));
                     default  : return ch;
                 }
-        };
+        }
 
         function hex_bytes(n) {
                 var num = 0;
@@ -424,7 +424,7 @@ function tokenizer($TEXT) {
                         num = (num << 4) | digit;
                 }
                 return num;
-        };
+        }
 
         function read_string() {
                 return with_eof_error("Unterminated string constant", function(){
@@ -437,7 +437,7 @@ function tokenizer($TEXT) {
                         }
                         return token("string", ret);
                 });
-        };
+        }
 
         function read_line_comment() {
                 next();
@@ -450,7 +450,7 @@ function tokenizer($TEXT) {
                         S.pos = i;
                 }
                 return token("comment1", ret, true);
-        };
+        }
 
         function read_multiline_comment() {
                 next();
@@ -471,7 +471,7 @@ function tokenizer($TEXT) {
 
                         return tok;
                 });
-        };
+        }
 
         function read_name() {
                 var backslash = false, name = "", ch;
@@ -490,7 +490,7 @@ function tokenizer($TEXT) {
                         }
                 }
                 return name;
-        };
+        }
 
         function read_regexp() {
                 return with_eof_error("Unterminated regular expression", function(){
@@ -514,7 +514,7 @@ function tokenizer($TEXT) {
                         var mods = read_name();
                         return token("regexp", [ regexp, mods ]);
                 });
-        };
+        }
 
         function read_operator(prefix) {
                 function grow(op) {
@@ -526,9 +526,9 @@ function tokenizer($TEXT) {
                         } else {
                                 return op;
                         }
-                };
+                }
                 return token("operator", grow(prefix || next()));
-        };
+        }
 
         function handle_slash() {
                 next();
@@ -544,14 +544,14 @@ function tokenizer($TEXT) {
                         return next_token();
                 }
                 return S.regex_allowed ? read_regexp() : read_operator("/");
-        };
+        }
 
         function handle_dot() {
                 next();
                 return is_digit(peek())
                         ? read_num(".")
                         : token("punc", ".");
-        };
+        }
 
         function read_word() {
                 var word = read_name();
@@ -562,7 +562,7 @@ function tokenizer($TEXT) {
                         : HOP(KEYWORDS_ATOM, word)
                         ? token("atom", word)
                         : token("keyword", word);
-        };
+        }
 
         function with_eof_error(eof_error, cont) {
                 try {
@@ -571,7 +571,7 @@ function tokenizer($TEXT) {
                         if (ex === EX_EOF) parse_error(eof_error);
                         else throw ex;
                 }
-        };
+        }
 
         function next_token(force_regexp) {
                 if (force_regexp)
@@ -588,7 +588,7 @@ function tokenizer($TEXT) {
                 if (HOP(OPERATOR_CHARS, ch)) return read_operator();
                 if (ch == "\\" || is_identifier_start(ch)) return read_word();
                 parse_error("Unexpected character '" + ch + "'");
-        };
+        }
 
         next_token.context = function(nc) {
                 if (nc) S = nc;
@@ -597,7 +597,7 @@ function tokenizer($TEXT) {
 
         return next_token;
 
-};
+}
 
 /* -----[ Parser (constants) ]----- */
 
@@ -661,7 +661,7 @@ function NodeWithToken(str, start, end) {
         this.name = str;
         this.start = start;
         this.end = end;
-};
+}
 
 NodeWithToken.prototype.toString = function() { return this.name; };
 
@@ -681,9 +681,9 @@ function parse($TEXT, exigent_mode, embed_tokens) {
 
         function is(type, value) {
                 return is_token(S.token, type, value);
-        };
+        }
 
-        function peek() { return S.peeked || (S.peeked = S.input()); };
+        function peek() { return S.peeked || (S.peeked = S.input()); }
 
         function next() {
                 S.prev = S.token;
@@ -694,11 +694,11 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         S.token = S.input();
                 }
                 return S.token;
-        };
+        }
 
         function prev() {
                 return S.prev;
-        };
+        }
 
         function croak(msg, line, col, pos) {
                 var ctx = S.input.context();
@@ -706,52 +706,52 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                          line != null ? line : ctx.tokline,
                          col != null ? col : ctx.tokcol,
                          pos != null ? pos : ctx.tokpos);
-        };
+        }
 
         function token_error(token, msg) {
                 croak(msg, token.line, token.col);
-        };
+        }
 
         function unexpected(token) {
                 if (token == null)
                         token = S.token;
                 token_error(token, "Unexpected token: " + token.type + " (" + token.value + ")");
-        };
+        }
 
         function expect_token(type, val) {
                 if (is(type, val)) {
                         return next();
                 }
                 token_error(S.token, "Unexpected token " + S.token.type + ", expected " + type);
-        };
+        }
 
-        function expect(punc) { return expect_token("punc", punc); };
+        function expect(punc) { return expect_token("punc", punc); }
 
         function can_insert_semicolon() {
                 return !exigent_mode && (
                         S.token.nlb || is("eof") || is("punc", "}")
                 );
-        };
+        }
 
         function semicolon() {
                 if (is("punc", ";")) next();
                 else if (!can_insert_semicolon()) unexpected();
-        };
+        }
 
         function as() {
                 return slice(arguments);
-        };
+        }
 
         function parenthesised() {
                 expect("(");
                 var ex = expression();
                 expect(")");
                 return ex;
-        };
+        }
 
         function add_tokens(str, start, end) {
                 return str instanceof NodeWithToken ? str : new NodeWithToken(str, start, end);
-        };
+        }
 
         var statement = embed_tokens ? function() {
                 var start = S.token;
@@ -854,7 +854,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                                 unexpected();
                         }
                 }
-        };
+        }
 
         function labeled_statement(label) {
                 S.labels.push(label);
@@ -863,11 +863,11 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         unexpected(start);
                 S.labels.pop();
                 return as("label", label, stat);
-        };
+        }
 
         function simple_statement() {
                 return as("stat", prog1(expression, semicolon));
-        };
+        }
 
         function break_cont(type) {
                 var name = is("name") ? S.token.value : null;
@@ -880,7 +880,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         croak(type + " not inside a loop or switch");
                 semicolon();
                 return as(type, name);
-        };
+        }
 
         function for_() {
                 expect("(");
@@ -893,7 +893,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                                 return for_in(init);
                 }
                 return regular_for(init);
-        };
+        }
 
         function regular_for(init) {
                 expect(";");
@@ -902,7 +902,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 var step = is("punc", ")") ? null : expression();
                 expect(")");
                 return as("for", init, test, step, in_loop(statement));
-        };
+        }
 
         function for_in(init) {
                 var lhs = init[0] == "var" ? as("name", init[1][0]) : init;
@@ -910,7 +910,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 var obj = expression();
                 expect(")");
                 return as("for-in", init, lhs, obj, in_loop(statement));
-        };
+        }
 
         var function_ = embed_tokens ? function() {
                 var start = prev();
@@ -947,7 +947,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                                   S.in_loop = loop;
                                   return a;
                           })());
-        };
+        }
 
         function if_() {
                 var cond = parenthesised(), body = statement(), belse;
@@ -956,7 +956,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         belse = statement();
                 }
                 return as("if", cond, body, belse);
-        };
+        }
 
         function block_() {
                 expect("{");
@@ -967,7 +967,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 }
                 next();
                 return a;
-        };
+        }
 
         var switch_block_ = curry(in_loop, function(){
                 expect("{");
@@ -1014,7 +1014,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 if (!bcatch && !bfinally)
                         croak("Missing catch/finally blocks");
                 return as("try", body, bcatch, bfinally);
-        };
+        }
 
         function vardefs(no_in) {
                 var a = [];
@@ -1034,15 +1034,15 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         next();
                 }
                 return a;
-        };
+        }
 
         function var_(no_in) {
                 return as("var", vardefs(no_in));
-        };
+        }
 
         function const_() {
                 return as("const", vardefs());
-        };
+        }
 
         function new_() {
                 var newexp = expr_atom(false), args;
@@ -1053,7 +1053,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         args = [];
                 }
                 return subscripts(as("new", newexp, args), true);
-        };
+        }
 
         function expr_atom(allow_calls) {
                 if (is("operator", "new")) {
@@ -1090,7 +1090,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         return subscripts(prog1(atom, next), allow_calls);
                 }
                 unexpected();
-        };
+        }
 
         function expr_list(closing, allow_trailing_comma, allow_empty) {
                 var first = true, a = [];
@@ -1105,11 +1105,11 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 }
                 next();
                 return a;
-        };
+        }
 
         function array_() {
                 return as("array", expr_list("]", !exigent_mode, true));
-        };
+        }
 
         function object_() {
                 var first = true, a = [];
@@ -1129,7 +1129,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 }
                 next();
                 return as("object", a);
-        };
+        }
 
         function as_property_name() {
                 switch (S.token.type) {
@@ -1138,7 +1138,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         return prog1(S.token.value, next);
                 }
                 return as_name();
-        };
+        }
 
         function as_name() {
                 switch (S.token.type) {
@@ -1150,7 +1150,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                     default:
                         unexpected();
                 }
-        };
+        }
 
         function subscripts(expr, allow_calls) {
                 if (is("punc", ".")) {
@@ -1170,13 +1170,13 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                                      next);
                 }
                 return expr;
-        };
+        }
 
         function make_unary(tag, op, expr) {
                 if ((op == "++" || op == "--") && !is_assignable(expr))
                         croak("Invalid use of " + op + " operator");
                 return as(tag, op, expr);
-        };
+        }
 
         function expr_op(left, min_prec, no_in) {
                 var op = is("operator") ? S.token.value : null;
@@ -1188,11 +1188,11 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         return expr_op(as("binary", op, left, right), min_prec, no_in);
                 }
                 return left;
-        };
+        }
 
         function expr_ops(no_in) {
                 return expr_op(expr_atom(true), 0, no_in);
-        };
+        }
 
         function maybe_conditional(no_in) {
                 var expr = expr_ops(no_in);
@@ -1203,7 +1203,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         return as("conditional", expr, yes, expression(false, no_in));
                 }
                 return expr;
-        };
+        }
 
         function is_assignable(expr) {
                 if (!exigent_mode) return true;
@@ -1216,7 +1216,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                     case "name":
                         return expr[1] != "this";
                 }
-        };
+        }
 
         function maybe_assign(no_in) {
                 var left = maybe_conditional(no_in), val = S.token.value;
@@ -1228,7 +1228,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         croak("Invalid assignment");
                 }
                 return left;
-        };
+        }
 
         function expression(commas, no_in) {
                 if (arguments.length == 0)
@@ -1239,7 +1239,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                         return as("seq", expr, expression(true, no_in));
                 }
                 return expr;
-        };
+        }
 
         function in_loop(cont) {
                 try {
@@ -1248,7 +1248,7 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 } finally {
                         --S.in_loop;
                 }
-        };
+        }
 
         return as("toplevel", (function(a){
                 while (!is("eof"))
@@ -1256,14 +1256,14 @@ function parse($TEXT, exigent_mode, embed_tokens) {
                 return a;
         })([]));
 
-};
+}
 
 /* -----[ Utilities ]----- */
 
 function curry(f) {
         var args = slice(arguments, 1);
         return function() { return f.apply(this, args.concat(slice(arguments))); };
-};
+}
 
 function prog1(ret) {
         if (ret instanceof Function)
@@ -1271,33 +1271,33 @@ function prog1(ret) {
         for (var i = 1, n = arguments.length; --n > 0; ++i)
                 arguments[i]();
         return ret;
-};
+}
 
 function array_to_hash(a) {
         var ret = {};
         for (var i = 0; i < a.length; ++i)
                 ret[a[i]] = true;
         return ret;
-};
+}
 
 function slice(a, start) {
         return Array.prototype.slice.call(a, start == null ? 0 : start);
-};
+}
 
 function characters(str) {
         return str.split("");
-};
+}
 
 function member(name, array) {
         for (var i = array.length; --i >= 0;)
                 if (array[i] === name)
                         return true;
         return false;
-};
+}
 
 function HOP(obj, prop) {
         return Object.prototype.hasOwnProperty.call(obj, prop);
-};
+}
 
 var warn = function() {};
 

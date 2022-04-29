@@ -3,7 +3,7 @@
 		    function Vector(x, y) {
 			this.x = x;
 			this.y = y;
-		    };
+		    }
 		    Vector.prototype = {
 			rotate: function (theta) {
 			    var x = this.x;
@@ -226,7 +226,7 @@
 			var flag = 0;
 			var time, temp = 800;
 			var radian = Math.PI;//弧度
-			var radianDecrement = Math.PI / 370 * 2;;//弧度增量
+			var radianDecrement = Math.PI / 370 * 2;//弧度增量
 			var heartX, heartY;
 			var LX = 700, LY = 370;
 			var URowX = LX, URowY = LY;

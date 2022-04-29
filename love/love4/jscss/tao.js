@@ -1,5 +1,5 @@
 // JavaScript Document
-var object = new Array();
+var object = [];
 nbfm   = 60;
 var xm = 0;
 var ym = 9999;
