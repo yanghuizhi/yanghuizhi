@@ -1,20 +1,20 @@
 ## Hey，杨会智 <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-<br />
+<br/>
 
 你好， 我是 [杨会智](https://github.com/yanghuizhi) ，出生于1993年，一位有6+工作经验的测试工程师。
 
-<br />
+<br/>
 
-  <img align="right" alt="GIF" src="https://github.com/likaia/likaia/blob/main/code.gif" width="330" height="60%" />
+<img align="right" alt="GIF" src="https://github.com/likaia/likaia/blob/main/code.gif" width="330" height="60%"/>
   
-- 💬 如果你对我感兴趣，可以加我[微信](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/weichat_info.jpg) 进一步交流。
+- 💬 如果你对我感兴趣，可以加我[微信](https://yanghuizhi.github.io/yanghuizhi/pay/weichat_info.jpg) 进一步交流。
 - 📫 我的邮箱: [347818169@qq.com](mailto:347818169@qq.com);
 - 📝 [博客测试1](https://yanghuizhi.github.io)
 - 📝 [博客测试2](https://yanghuizhi.github.io/yanghuizhi/Resume)
-- 📝 [二维码支付](https://yanghuizhi.github.io/yanghuizhi/YhzPayMoneyService/index.html)
-- 📝 [协助协议](https://yanghuizhi.github.io/yanghuizhi/YhzPersonalMottoService/index.html)
-- [MODEL](https://yanghuizhi.github.io/yanghuizhi/YhzLoveYouService/love6)
+- 📝 [二维码支付](https://yanghuizhi.github.io/yanghuizhi/pay/index.html)
+- 📝 [协助协议](https://yanghuizhi.github.io/yanghuizhi/pay/protocol.html)
+- [MODEL](https://yanghuizhi.github.io/yanghuizhi/love/love6)
 
 <img align="left" src="https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark" width="330" height="100%" />
 
