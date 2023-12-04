@@ -1,10 +1,3 @@
-.h1 {
-    text-align: left;
-    width: 500px;
-    height: 1px;
-    text-indent:1em;
-}
-
 .box {
     width:600px;
     display: inline-flex;
@@ -33,3 +26,17 @@
     height: 360px;
     border-style: inset;
 }
+.over {
+            position: fixed;
+            left:0;
+            top:0;
+            width:100%;
+            z-index:100;
+        }
+.tempContainer {
+    position:fixed;
+    width:100%;
+    margin-right:0;
+    margin-left:0;
+    text-align:center;
+    z-index:101;}

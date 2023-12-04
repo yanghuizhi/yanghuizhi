@@ -10,11 +10,10 @@
   
 - 💬 如果你对我感兴趣，可以加我[微信](https://yanghuizhi.github.io/yanghuizhi/pay/weichat_info.jpg) 进一步交流。
 - 📫 我的邮箱: [347818169@qq.com](mailto:347818169@qq.com);
-- 📝 [博客测试1](https://yanghuizhi.github.io)
-- 📝 [博客测试2](https://yanghuizhi.github.io/yanghuizhi/Resume)
+- 📝 [test blog 1](https://yanghuizhi.github.io)
+- 📝 [test blog 2](https://yanghuizhi.github.io/yanghuizhi/Resume)
 - 📝 [二维码支付](https://yanghuizhi.github.io/yanghuizhi/pay/index.html)
 - 📝 [协助协议](https://yanghuizhi.github.io/yanghuizhi/pay/protocol.html)
-- [MODEL](https://yanghuizhi.github.io/yanghuizhi/love/love6)
 
 <img align="left" src="https://github-readme-stats.vercel.app/api?username=yanghuizhi&theme=dark" width="330" height="100%" />
 
