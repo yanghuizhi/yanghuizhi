@@ -1,1 +1,3 @@
-document.body.onkeypress = function(){document.body.classList.toggle('liked')}
+document.body.onkeypress = function(){
+    document.body.classList.toggle('liked')
+}

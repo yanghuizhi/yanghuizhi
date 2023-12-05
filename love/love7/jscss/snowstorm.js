@@ -1,5 +1,5 @@
 /** @license
- * DHTML Snowstorm! JavaScript-based Snow for web pages
+ * DHTML Snowstorm! JavaScript-based Snow for web_learn pages
  * --------------------------------------------------------
  * Version 1.0.0
  * Copyright (c) 2012, Mike_TDX. All rights reserved.

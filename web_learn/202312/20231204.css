@@ -1,0 +1,16 @@
+ .container {
+    display: flex;
+    border: 1px black solid;
+    width: 500px;
+    flex-direction: column ;
+/*  flex-direction 用于指定主轴的方向， 有四个值， 默认是row，水平方向。项目始终沿着主轴的方向排列，如果改变布局排列就会跟着发生变化。
+    flex-direction: row|row-reverse|column|column-reverse;
+*/
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: paleturquoise;
+    margin: 20px;
+}
