@@ -280,7 +280,7 @@ document.write();
                         <div class="module cl ml mls" id="users">
                             <ul>
                                 <!--<li>-->
-                                <!--<a href="#" target="_blank"><img src="images/noavatar_small.gif" width="48" height="48" alt="生命壹号"></a>-->
+                                <!--<a href="#" target="_blank"><image src="images/noavatar_small.gif" width="48" height="48" alt="生命壹号"></a>-->
                                 <!--<p><a href="#" title="生命壹号" target="_blank">生命壹号</a></p>-->
                                 <!--</li>-->
 
@@ -327,7 +327,7 @@ document.write();
     for (var i = 0; i < users.length; i++) {
         //2.模拟实验的操作方式。
         ul.innerHTML += '<li>' +
-            '<a href="#" target="blank"><img src="' + users[i].icon + '" width="48" height="48" alt="' + users[i].name + '"></a>' +
+            '<a href="#" target="blank"><image src="' + users[i].icon + '" width="48" height="48" alt="' + users[i].name + '"></a>' +
             '<p><a href="#" title="' + users[i].name + '" target="_blank">' + users[i].name + '</a></p>' +
             '</li>';
     }

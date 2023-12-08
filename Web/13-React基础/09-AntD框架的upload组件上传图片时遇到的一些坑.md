@@ -41,8 +41,8 @@ class PicturesWall extends PureComponent {
 
 
   handleChange = ({ file, fileList }) => {
-    console.log(JSON.stringify(file)); // file 是当前正在上传的 单个 img
-    console.log(JSON.stringify(fileList)); // fileList 是已上传的全部 img 列表
+    console.log(JSON.stringify(file)); // file 是当前正在上传的 单个 image
+    console.log(JSON.stringify(fileList)); // fileList 是已上传的全部 image 列表
 
     this.setState({
       imgList: fileList,
@@ -266,8 +266,8 @@ fileList 的打印结果：
 
 ```javascript
   handleChange = ({ file, fileList }) => {
-    console.log(JSON.stringify(file)); // file 是当前正在上传的 单个 img
-    console.log(JSON.stringify(fileList)); // fileList 是已上传的全部 img 列表
+    console.log(JSON.stringify(file)); // file 是当前正在上传的 单个 image
+    console.log(JSON.stringify(fileList)); // fileList 是已上传的全部 image 列表
 
 
     // 【重要】将 图片的base64替换为图片的url。 这一行一定不会能少。

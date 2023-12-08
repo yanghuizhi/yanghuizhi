@@ -203,7 +203,7 @@
         aArr[i].onclick = function () {
             //3.【核心代码】书写事件驱动程序：修改属性值
             img.src = this.href;  //this指的是函数调用者，和i并无关系，所以不会出错。
-//            img.src = aArr[i].href;   注意，上面这一行代码不要写成这样
+//            image.src = aArr[i].href;   注意，上面这一行代码不要写成这样
             des.innerHTML = this.title;
             return false;    //return false表示：阻止继续执行下面的代码。
         }

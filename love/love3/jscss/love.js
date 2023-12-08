@@ -41,7 +41,7 @@ $(function(){
 				$("#text-music").focus();
 				setTimeout(function() {$("#write-mp3 i").fadeOut();},3000);
 			}else{
-				$("#back").html('<img src="img/loading.gif" alt="loading">');
+				$("#back").html('<image src="image/loading.gif" alt="loading">');
 				$("#write-post").text("页面生成中...").attr("disabled",true).addClass("disabled");
 				$.post("love.php?add",{textHref:textHref,textMusic:textMusic,textArr:textArr},
 				function(data){
