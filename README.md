@@ -2,7 +2,7 @@
 
 <br/>
 
-你好， 我是 [杨会智](https://github.com/yanghuizhi) ，出生于1993年，一位有6+工作经验的测试工程师。
+你好， 我是 [杨会智](https://github.com/yanghuizhi) ，90后，一位有8+工作经验的测试专家。
 
 <br/>
 
